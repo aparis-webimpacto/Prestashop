@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>steavisgarantis</name>
+    <displayName><![CDATA[Sociedad de Opiniones Contrastadas]]></displayName>
+    <version><![CDATA[5.3.0]]></version>
+    <description><![CDATA[Recopilar, garantizar y publicar las cr&iacute;ticas de los clientes. Aumente sus ventas de forma r&aacute;pida y sencilla.]]></description>
+    <author><![CDATA[Soci&eacute;t&eacute; des Avis Garantis]]></author>
+    <tab><![CDATA[advertising_marketing]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
