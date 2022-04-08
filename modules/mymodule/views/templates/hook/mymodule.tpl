@@ -19,11 +19,12 @@ el parametro s es la cadena y mod debe contener el id del modulo('mymodule' en e
            !
     </p>
     <ul>
-      <li><a href="{$my_module_link}" title="Click this link">Click me!</a></li>
+      <li><a href="{$my_module_link}" title="Click this link"></a></li>
     </ul>
     {$my_module_message}
-    {$my_module_message2}
+    <p>La url actual</p>
     {$urls.current_url}
+
   </div>
 </div>
 <!-- /Block mymodule -->

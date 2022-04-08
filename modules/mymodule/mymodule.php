@@ -44,6 +44,7 @@ class MyModule extends Module
         //Estas lineas asignan:
         //Un nombre para el modulo
         $this->displayName = $this->l('My module');
+        // $this->displayName = $this->trans('My module', [], 'Modules.Mymodule.Mymodule');
         //Una descripción del módulo
         $this->description = $this->l('Este es el primer modulo realizado por Alba Paris.');
         //Un mensaje preguntando al administrador si realmente quiere desinstalar el módulo. 
@@ -171,7 +172,7 @@ class MyModule extends Module
         $this->context->smarty->assign([
             'my_module_name' => Configuration::get('MYMODULE_NAME'),
             'my_module_link' => $this->context->link->getModuleLink('mymodule', 'display'),
-            'my_module_message' => $this->l('Puedes cambiar el mensjae en la linea 174 de mymodule.php'),
+            'my_module_message' => $this->trans('You can change the message on line 174 of mymodule.php',[], 'Modules.Mymodule.Mymodule'),
         ]);
         //retorna la plantilla mymodule.tpl
         return $this->display(__FILE__, 'mymodule.tpl');
@@ -207,6 +208,10 @@ class MyModule extends Module
                 'priority' => 1000,
             ]
         );
+    }
+
+    public function isUsingNewTranslationSystem(){
+        return true;
     }
 
 }
